@@ -1,0 +1,17 @@
+<div class="form">
+  <md-input-container>
+    <input mdInput placeholder="Project Name" [(ngModel)]="project.PROJECT_NAME">
+  </md-input-container>
+
+  <md-select [(ngModel)]="project.STATUS">
+    <md-option value="NOT STARTED">Not Started</md-option>
+    <md-option value="IN PROGRESS">In Progress</md-option>
+    <md-option value="COMPLETED">Completed</md-option>
+  </md-select>
+</div>
+
+<div class="footer">
+  <button md-raised-button class="mat-primary" (click)="save()">Save</button>
+  <button md-raised-button class="mat-warn" (click)="cancel()">Cancel</button>
+</div>
+

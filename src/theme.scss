@@ -1,0 +1,16 @@
+@import '~@angular/material/theming';
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/material.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+
+@include mat-core();
+
+$insightly-primary: mat-palette($mat-green, 600);
+$insightly-accent:  mat-palette($mat-blue, 800);
+
+$insightly-warn:    mat-palette($mat-red);
+
+$insightly-theme: mat-light-theme($insightly-primary, $insightly-accent, $insightly-warn);
+
+
+@include angular-material-theme($insightly-theme);
